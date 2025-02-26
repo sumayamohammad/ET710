@@ -1,0 +1,128 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* --- CARD STYLING --- */
+
+/* Cards Wrapper */
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    padding: 2em;
+}
+
+/* Card Box */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    padding: 1em;
+    border: 1px solid #ddd;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Image inside Card - SMALLER SIZE */
+.card img {
+    width: auto;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Card Content */
+.card-content {
+    padding: 0.5em;
+}
+
+/* Card Title & Links */
+.card h3 {
+    margin-top: 0.5em;
+    font-size: 1.1em;
+}
+
+.card-link {
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    color: darkblue;
+}
+
+/* Card Description */
+.card-info {
+    font-size: 0.85em;
+    color: #555;
+    padding: 0.5em;
+}
+
+/* --- NAVIGATION STYLING --- */
+
+/* Vertical Tabs */
+.vertical-tabs {
+    list-style: none;
+    padding: 0;
+    margin: 2em auto;
+    width: 200px;
+}
+
+.vertical-tabs li a {
+    display: block;
+    background-color: blueviolet;
+    color: whitesmoke;
+    padding: 1em;
+    text-decoration: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.vertical-tabs li a:hover {
+    background-color: aqua;
+    color: darkblue;
+}
+
+/* Horizontal Tabs */
+.horizontal-tabs {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 1em;
+}
+
+.horizontal-tabs a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.8em;
+    border-radius: 5px;
+}
+
+.horizontal-tabs a:hover {
+    background-color: aqua;
+    color: darkblue;
+}
+
+/* --- FOOTER --- */
+
+.footer {
+    background-color: #f4f4f4;
+    padding: 1em;
+    margin-top: 2em;
+}

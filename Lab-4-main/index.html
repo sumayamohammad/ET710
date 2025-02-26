@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Basket</title>
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fruit-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .circular-frame {
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circular-frame img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Fruit Basket</h1>
+    <h3 align="center">By</h3>
+    <h2 align="center">Sumaya Mohammad</h2>
+
+    <div class="center">
+        <figure class="circular-frame">
+            <img src="https://github.com/sumayamohammad/Lab-4/blob/7f2aae1414144d0ce80d8cb215d9efbd053d896f/Images/Leonardo_Phoenix_10_generate_a_highresolution_PNG_image_of_a_w_0-removebg-preview.png?raw=true" 
+                 alt="Fruit Basket Img" usemap="#fruitmap">
+            <map name="fruitmap">
+                <!-- Papaya Area -->
+                <area shape="rect" coords="80,250,180,350"
+                      href="https://sumayamohammad.github.io/Lab-4/papaya.html" alt="Papaya">
+
+                <!-- Pineapple Area -->
+                <area shape="rect" coords="200,50,300,350"
+                      href="https://sumayamohammad.github.io/Lab-4/pineapple.html" alt="Pineapple">
+
+                <!-- Banana Area -->
+                <area shape="rect" coords="350,200,480,400"
+                      href="https://sumayamohammad.github.io/Lab-4/banana.html" alt="Banana">
+            </map>
+        </figure>
+    </div>
+
+    <nav class="fruit-links">
+        <h3><a href="https://sumayamohammad.github.io/Lab-4/papaya.html">Papaya</a></h3>
+        <h3><a href="https://sumayamohammad.github.io/Lab-4/pineapple.html">Pineapple</a></h3>
+        <h3><a href="https://sumayamohammad.github.io/Lab-4/banana.html">Banana</a></h3>
+    </nav>
+</body>
+</html>
