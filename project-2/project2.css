@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primarycolor: rgb(159, 235, 20);
+    --primarydark: rgb(1, 87, 31);
+    --primarylight: rgb(226, 236, 241);
+    --secondarycolor: rgb(72, 253, 20);
+}
+
+/* Typography and Layout */
+body, header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primarycolor);
+}
+
+/* Header */
+header {
+    background-color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('background.jpg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    color: #2c2c2c;
+    text-shadow: 1px 1px 3px white;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+#hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#hero h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Carousel */
+#carouselSection {
+    margin: 40px 0;
+}
+
+.carousel-item img {
+    height: 80vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.carousel-caption h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+/* Products Section */
+#products h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primarydark);
+    margin-bottom: 40px;
+}
+
+#products img {
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#products img:hover {
+    transform: scale(1.05);
+}
+
+#products p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.modal-header {
+    background-color: var(--primarycolor);
+    color: white;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-body {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Shop Section */
+#shop2 h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primarydark);
+    margin-bottom: 40px;
+}
+
+#shop2 img {
+    border: 2px solid #444;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#shop2 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#shop2 p.fw-bold {
+    color: #e91e63;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+#shop2 p.text-muted {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+footer h5 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer p, footer a {
+    font-size: 16px;
+    color: #333;
+}
+
+footer a:hover {
+    color: var(--primarycolor);
+    text-decoration: underline;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #dee2e6;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+}
+
+/* Social Media Icons */
+.social-icons a {
+    color: #555;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--primarycolor);
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 50vh;
+    }
+
+    #hero h1 {
+        font-size: 2.2rem;
+    }
+
+    #hero h2 {
+        font-size: 1.8rem;
+    }
+
+    #hero h4 {
+        font-size: 1.3rem;
+    }
+
+    .carousel-caption {
+        padding: 10px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
